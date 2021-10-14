@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'EncodeSansCondensed';
+    src: url('/fonts/EncodeSansCondensed-Regular.woff') format('woff'),
+        url('/fonts/EncodeSansCondensed-Regular.ttf') format('ttf');
+}
+  
+
 /* ----- nav -------*/
 
 

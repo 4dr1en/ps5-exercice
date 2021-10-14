@@ -2,7 +2,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10%;
+    padding: 6%;
     color: white;
     background-color: #00439c;
 }
@@ -39,6 +39,10 @@ footer {
 
 
 @media screen and (min-width: 600px) {
+    footer {
+        padding: 10%;
+    }
+
     .footer-nav>ul {
         display: flex;
         gap: 120px;

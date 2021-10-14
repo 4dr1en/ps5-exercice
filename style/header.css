@@ -58,7 +58,7 @@ header {
 @media screen and (max-width: 900px) {
     header {
         grid-template-columns: 1fr auto;
-        height: 100px;
+        height: 105px;
     }
 
     .header-nav {
@@ -72,6 +72,7 @@ header {
 @media screen and (max-width: 500px) {
 
     header {
+        padding-inline: 6%;
         padding-top: 10px;
     }
 
@@ -82,5 +83,9 @@ header {
     .header-logo {
         grid-column: span 2;
         margin: auto;
+    }
+
+    .header-nav__item a {
+        font-size: 1.1rem;
     }
 }
