@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'EncodeSansCondensed';
-    src: url('/fonts/EncodeSansCondensed-Regular.woff') format('woff'),
-        url('/fonts/EncodeSansCondensed-Regular.ttf') format('ttf');
+    src: url('../fonts/EncodeSansCondensed-Regular.woff') format('woff'),
+        url('../fonts/EncodeSansCondensed-Regular.ttf') format('ttf');
 }
 
 @font-face {
     font-family: 'roboto';
-    src: url('/fonts/Roboto-Medium.woff') format('woff'),
-        url('/fonts/Roboto-Medium.ttf') format('ttf');
+    src: url('../fonts/Roboto-Medium.woff') format('woff'),
+        url('../fonts/Roboto-Medium.ttf') format('ttf');
 }
   
 
