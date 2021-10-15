@@ -1,10 +1,220 @@
 .hero {
-    max-height: 80vh;
+    position: relative;
 }
 
-.hero {
+.hero img {
     width: 100%;
-    max-height: 100%;
+    height: auto;
+    max-height: 85vh;
     object-fit: cover;
-    object-position: center;
+    object-position: 50% 50%;
+}
+
+.hero-label {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'EncodeSansCondensed', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.hero-label h1 {
+    margin: 0;
+}
+
+.hero-label img {
+    width: auto;
+    height: 40px;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 6%;
+    font-family: 'roboto', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.game img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+.game:nth-child(2) {
+    color: white;
+    background-color: #00439c;
+}
+
+.game:nth-child(4) {
+    background-color: #d8dce8;
+}
+
+.game__desc {
+    order: -1;
+    max-width: 800px;
+    text-align: center;
+}
+
+.game h2 {
+    font-size: 46px;
+}
+
+.game p {
+    font-size: 18px;
+}
+
+.game__desc .btn {
+    margin: auto;
+    margin-top: 50px;
+}
+
+.carousel {
+    padding: 100px 6%;
+}
+
+.carousel-dec {
+    max-width: 710px;
+    margin: auto;
+    overflow: hidden;
+    font-family: 'roboto', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.carousel-dec h2 {
+    font-size: 46px;
+}
+
+.carousel-dec p {
+    font-size: 26px;
+}
+
+.carousel-content {
+    display: flex;
+    gap: 20px;
+    overflow: auto;
+}
+
+.carousel-content img {
+    width: 20% !important;
+    min-width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+
+.carousel-wrapper {
+
+    max-width: 100vw;
+    margin-top: 75px;
+    overflow: hidden;
+}
+
+.carousel-comandes {
+    position: relative;
+}
+
+.carousel-comandes::before,
+.carousel-comandes::after {
+    position: absolute;
+    top: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    content: url('../images/icons/arrow-circle-right-solid.svg');
+}
+
+.carousel-comandes::before {
+    left: -50px;
+    transform: rotate(180deg);
+}
+
+.carousel-comandes::after {
+    right: -50px;
+}
+
+@media screen and (min-width: 600px) {
+
+    .hero-label {
+        font-size: 32px;
+    }
+
+    .hero-label img {
+        width: auto;
+        height: 60px;
+    }
+
+    .game {
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: 1fr 1fr;
+        gap: 10%;
+        align-items: stretch;
+        padding-block: 96px;
+    }
+
+    .game:nth-child(odd) {
+        padding-right: 10%;
+        padding-left: 16%;
+    }
+
+    .game:nth-child(even) {
+        padding-right: 16%;
+        padding-left: 10%;
+    }
+
+    .game:nth-child(odd) .game__desc {
+        text-align: right;
+    }
+
+    .game:nth-child(even) .game__desc {
+        text-align: left;
+    }
+    
+    .game:nth-child(even) .game__image {
+        order: -1;
+    }
+
+    .game img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .game__desc h2 {
+        margin-top: 0;
+    }
+
+    .game:nth-child(odd) .game__desc .btn {
+        margin-right: 0;
+    }
+
+    .game:nth-child(even) .game__desc .btn {
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .hero-label {
+        flex-direction: row;
+    }
+
+    .hero-label img {
+        width: auto;
+        height: 110px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .hero-label {
+        font-size: 46px;
+    }
 }

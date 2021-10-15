@@ -1,0 +1,89 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 6% 0;
+}
+
+.hero h1 {
+    font-family: 'roboto', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+.hero img {
+    max-width: 100% !important;
+}
+
+.console-standard,
+.console-digital {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 6%;
+    font-family: 'roboto', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.console-standard button,
+.console-digital button {
+    margin: auto;
+}
+
+.console-standard img,
+.console-digital img {
+    max-width: 100% !important;
+    max-height: 300px !important;
+}
+
+.console-standard-desc button,
+.console-digital-desc button {
+    margin-top: 30px;
+}
+
+.console-digital {
+    margin-bottom: 100px;
+}
+
+@media screen and (min-width: 600px) {
+    .console-standard,
+    .console-digital {
+        padding: 60px 10%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .console-standard,
+    .console-digital {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8%;
+    }
+
+    .console-standard-illus,
+    .console-digital-illus {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        order: -1;
+    }
+
+    .console-standard-desc,
+    .console-digital-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .console-standard-desc p,
+    .console-digital-desc p {
+        max-width: 500px;
+    }
+
+    .console-standard-desc button,
+    .console-digital-desc button {
+        margin-inline: 0;
+    }
+}
+
